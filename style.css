@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Cairo:wght@200..1000&display=swap');
+:root {
+    --primary-color: #1a2a54;
+    --secondary-color: #ff6347;
+    --accent-color: #00bcd4;
+  }
+body {
+    font-family: "Barlow", sans-serif;
+    line-height: 107;
+    color: var(--accent-color);
+}
+a {
+    color:white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+/* top navbar */
+.top-nav img {
+    max-width: 100%; 
+    max-height: 100px; 
+}
+.dropdown-menu {
+    left: unset !important;
+    right: -100px;
+}
+
+/* Positioning the images */
+.top-nav .row {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.top-nav {
+    background-color: white; 
+    padding: 10px 0; 
+}
+/* navbar style */
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+.navbar-toggler {
+    border-color: white; 
+    background-color: transparent; 
+}
+.nav-item {
+    margin-left: 80px;
+}
+.nav-item a {
+    text-transform: uppercase; 
+    font-size: 16px; 
+}
+
+/* Styles pour les tirets */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Utilise une image SVG pour représenter les tirets avec une couleur blanche */
+}
+.navbar-custom {
+    background-color: var(--primary-color) !important;
+}
+.navbar {
+    box-shadow : 0px 6px 30px rgba(0 ,0, 0, 0.08);
+}
+.navbar .navbar-nav .nav-link {
+    color: white; 
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    filter: blur(1px);
+    color: blue; 
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 26px;
+    color: white; 
+}
+
+/* hada style dyal button scrol top d la page */
+.scrollTop{
+        position: fixed;
+        bottom: 53px;
+        right: 15px;
+        padding: 0px 8px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 38px;
+        border-radius: 1px solid #fff;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+        font-size: 28px;
+    }
+.scrollTop:hover{
+  background-color: #f7f7f7;
+  color: #000;
+}
+/* style de home page  */
+  
+  .container p {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  
+  .container .liens_p li {
+    font-family: Arial;
+    list-style-type: none;
+    margin-bottom: 5px;
+    list-style-type: disc;
+    margin-bottom: 5px;
+  }
+  /* style de tools 1 */
+  .container p {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .container .liens_p2 li {
+    font-family: Arial;
+    list-style-type: none;
+    margin-bottom: 5px;
+    list-style-type: disc;
+    margin-bottom: 5px;
+  }
+  /* style de project members */
+  
+
+
+
+
+
+
+  /* fin style de project members */
+
+  /* le style pour les cards qui se trouve dans la premiere tool */
+
+
+  .card-deck .card {
+    height: 100%; 
+}
+
+  .card-deck {
+    margin-left: 6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%; /* Adjust the width of all cards */
+    margin: 0 10px;
+    flex: 1;
+    margin-bottom: 20px; /* Ajustez selon vos besoins */
+}
+
+
+#icon {
+    text-align: center; 
+}
+
+/* ici le style de analyse 1 de tools 1 */
+.nine{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     position: relative; 
+}
+.img_tl{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-deck {
+    margin-left: 6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    width: 30%;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(248 248 248);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .05) inset, 0 -5px 15px 0 rgba(0, 0, 0, .05) inset;
+    border-bottom-color: #132e46 !important;
+    border-radius: 10px;
+    background: #f8f8f8;
+}
+
+#icon {
+    text-align: center; 
+}
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-color: rgba(248, 248, 248, 1);
+    border-width: 2px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover a {
+    text-decoration: none;
+}
+.nine h1 {
+    font-size: 36px; /* Taille de la police */
+    color:var(--primary-color); /* Couleur du texte */
+    font-weight: bold; /* Gras */
+}
+
+.nine span {
+    font-size: 17px;
+    color: black;
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-49%);
+}
+
+/* ici le style de texterea */
+
+.form-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 800px; 
+    align-items: flex-start; 
+}
+.form-control{
+    width: 60%;
+}
+/* le stile de button  */
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    margin-top: 102px;
+    margin-left: 10px;
+}
+textarea.form-control {
+    width: 70%;
+    min-height: calc(5em +(3rem + 13px));
+}
+/* style de div affiche le contenu */
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    align-items: flex-start;
+}
+/* footer */
+footer {
+    background-color: var(--primary-color) !important;
+    box-shadow: inset -3px 0px 4px 0px transparent;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+  }
+  /* texterea */
+  #myTextarea:hover {
+    color: blue;
+}
+
+/* le style de contenu affciher apres api */
+
+
+.six h1 {
+    text-align: center;
+    color: #222;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    color: #132e46;
+
+}
+.six p {
+    line-height: 2em;
+    padding-bottom: 15px;
+    text-transform: none;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Playfair Display", "Bookman", serif;
+    color: #222;
+    letter-spacing: -0.005em;
+    word-spacing: 1px;
+    letter-spacing: none;
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+.six h1 span {
+    line-height: 2em;
+    padding-bottom: 15px;
+    text-transform: none;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Playfair Display", "Bookman", serif;
+    color: #000;
+    letter-spacing: -0.005em;
+    word-spacing: 1px;
+}
+
+/* Styles réutilisables pour tous les blocs de code */
+.code-block {
+    background-color: #F5F2F0; /* Couleur de fond */
+    padding: 10px; /* Espacement intérieur */
+    border-radius: 5px; /* Bord arrondi */
+    max-height: 400px; /* Hauteur maximale */
+    overflow-y: auto; /* Ajouter une barre de défilement vertical si nécessaire */
+    font-family: monospace; /* Police de caractères */
+    font-size: 14px; /* Taille de la police */
+    margin-right: 10px; /* Marge à droite pour séparer les blocs */
+}
+.code-block code {
+    overflow-y: hidden;
+  }
+
+/* Styles spécifiques au code Java */
+
+.token.atrule, .token.attr-value, .token.keyword {
+    color: #07a;
+}
+.token.namespace {
+    opacity: .7;
+}
+.token.punctuation {
+    color: #999;
+}
+.token.class-name, .token.function {
+    color: #dd4a68;
+}
+.token.keyword {
+    color: #07a;
+}
+token.cdata, .token.comment, .token.doctype, .token.prolog {
+    color: #708090;
+}
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+    color: #690;
+}
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5);
+}
+token.deleted, .token.number, .token.property, .token.symbol, .token.tag {
+    color: #905;
+}
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* 
+fin style de contenu apres api */
+
+/* responsive */
+ /* footer responsivity small media */
+/* Centrage du texte pour les écrans extra petits */
+@media (max-width: 576px) {
+    footer p {
+        text-align: center !important;
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustement de la taille de la police pour les écrans moyens */
+@media (min-width: 768px) {
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .six h1 {
+        font-size: 24px; /* Redimensionner la taille de la police pour les petits écrans */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: 45%; /* Ajustez selon vos besoins */
+    }
+}
+@media (max-width: 576px) { 
+    .anlyse1 h1 {
+        font-size: 1.5rem; 
+    }
+}
+@media (min-width: 576px){
+.card-deck .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+      white-space: nowrap; /* Empêche le saut de ligne */
+    }
+  }
+  
+
+
+
